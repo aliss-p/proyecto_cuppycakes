@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos</title>
 </head>
@@ -24,53 +25,122 @@
         </nav>
     </header>
 <!-- MAIN -->
-    <main class="productos">
-        <section class="section gallery1">
-            <h1 class="pics__title">TORTAS</h1>
-            <p class="pics__text">Proin cursus rhoncus ullamcorper. Aliquam nec posuere mi, nec ornare orci. Duis finibus porttitor erat at sodales.</p>
-            <div class="pics">
-                <img src="../media/cake/1.jpg" alt="Torta de frutillas" width="100%" height="100%">
-                <img src="../media/cake/2.jpg" alt="Torta degradé" width="100%" height="100%">
-                <img src="../media/cake/3.jpg" alt="Drip cake rosa" width="100%" height="100%">
-                <img src="../media/cake/4.jpg" alt="Drip cake chocolate" width="100%" height="100%">
+    <main>
+        <div class="container-sm mt-5 mb-5">
+            <div class="row">
+                <article class="col-sm-6">
+                    <!-- Carousel 1 -->
+                    <div id="car" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#car" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#car" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#car" data-bs-slide-to="3"></button>
+                        </div>
+                    <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../media/cake/1.jpg" alt="Frutillas" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cake/2.jpg" alt="Degradé" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cake/3.jpg" alt="Drip Rosa" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cake/4.jpg" alt="Drip Choco" class="d-block" style="width:100%">
+                            </div>
+                        </div>
+                    <!-- flechitas -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="mt-1">
+                        <h1 class="section__title">Tortas</h1>
+                        <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam esse alias sint, maxime molestiae quas distinctio incidunt voluptatem deleniti accusamus repellat, porro, repudiandae rerum consequuntur nesciunt cupiditate soluta quia.</p>
+                    </div>
+                </article>
+                <article class="col-sm-6">
+                    <!-- Carousel 2 -->
+                    <div id="car2" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#car2" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#car2" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#car2" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#car2" data-bs-slide-to="3"></button>
+                        </div>
+                    <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../media/mesa/5.jpg" alt="mesa1" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/mesa/6.jpg" alt="mesa2" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/mesa/7.jpg" alt="mesa3" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/mesa/8.jpg" alt="mesa4" class="d-block" style="width:100%">
+                            </div>
+                        </div>
+                    <!-- flechitas -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="mt-1">
+                        <h1 class="section__title">Mesas Dulces</h1>
+                        <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam esse alias sint, maxime molestiae quas distinctio incidunt voluptatem deleniti accusamus repellat, porro, repudiandae rerum consequuntur nesciunt cupiditate soluta quia.</p>
+                    </div>
+                </article>
             </div>
-        </section>
-        <section class="section gallery2">
-            <h1 class="pics__title">MESAS DULCES</h1>
-            <p class="pics__text">Proin cursus rhoncus ullamcorper. Aliquam nec posuere mi, nec ornare orci. Duis finibus porttitor erat at sodales.</p>
-            <div class="pics">
-                <img src="../media/mesa/5.jpg" alt="Mesa dulce 1" width="100%" height="100%">
-                <img src="../media/mesa/6.jpg" alt="Mesa dulce 2" width="100%" height="100%">
-                <img src="../media/mesa/7.jpg" alt="Mesa dulce 3" width="100%" height="100%">
-                <img src="../media/mesa/8.jpg" alt="Mesa dulce 4" width="100%" height="100%">
-            </div>
-        </section>
+        </div>
     </main>
 <!--  FOOTER  -->
-    <footer class="footer up">
-        <article class="footer__sec">Navegación
-            <ul>
-                <li class="footer__link"><a href="../index.html" class="footer__item">INICIO</a></li>
-                <li class="footer__link"><a href="./productos.html" class="footer__item">PRODUCTOS</a></li>
-                <li class="footer__link"><a href="./cotizacion.html" class="footer__item">COTIZACIÓN</a></li>
-                <li class="footer__link"><a href="./lapasteleria.html" class="footer__item">LA PASTELERÍA</a></li>
-                <li class="footer__link"><a href="./contacto.html" class="footer__item">CONTACTO</a></li>
-            </ul>
-        </article>
-        <article class="footer__sec">Contactanos
-            <ul>
-                <li class="footer__item">+549 (264) 4567890</li>  
-                <li class="footer__item">+549 (264) 4324567</li>
-                <li class="footer__item">Mendoza 145 (n)</li> 
-            </ul>
-        </article>
-        <article class="footer__sec">Redes Sociales
-            <ul>
-                <li class="footer__link"><a href="https://www.instagram.com/" class="footer__item">Instagram</a></li>
-                <li class="footer__link"><a href="https://www.facebook.com/" class="footer__item">Facebook</a></li><br>
-                <p>Made by <span id="sign">a unicorn ❤</span></p>
-            </ul>
-        </article>
-    </footer>    
+    <footer class="footer container-fluid">
+        <div class="row pt-2">
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">Navegación</li>
+                    <li><a href="index.html" class="footer__item text-decoration-none">INICIO</a></li>
+                    <li><a href="./paginas/productos.html" class="footer__item text-decoration-none">PRODUCTOS</a></li>
+                    <li><a href="./paginas/cotizacion.html" class="footer__item text-decoration-none">COTIZACIÓN</a></li>
+                    <li><a href="./paginas/lapasteleria.html" class="footer__item text-decoration-none">LA PASTELERÍA</a></li>
+                    <li><a href="./paginas/contacto.html" class="footer__item text-decoration-none">CONTACTO</a></li>
+                </ul>
+            </article>
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">Contactanos</li>
+                    <li class="footer__item">+549 (264) 4567890</li>  
+                    <li class="footer__item">+549 (264) 4324567</li>
+                    <li class="footer__item">Mendoza 145 (n)</li> 
+                </ul>
+            </article>
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">Redes Sociales</li>
+                    <li><a href="https://www.instagram.com/" class="footer__item text-decoration-none">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" class="footer__item text-decoration-none">Facebook</a></li><br>
+                    
+                </ul>
+            </article>
+        </div>
+        <div class="container-fluid text-center">
+            <p class="small">Made by <span id="sign">a unicorn ❤</span></p>
+        </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

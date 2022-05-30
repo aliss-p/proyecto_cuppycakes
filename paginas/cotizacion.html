@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Cotización</title>
 </head>
@@ -25,50 +26,58 @@
     </header>
 <!-- MAIN -->
     <main class="main2">
-        <div class="form slide">
+        <div class="form slide container">
             <h1 class="section__title">Cotizá tu pedido</h1>
             <form>
-                <label for="nombreyapellido" class="section__text">Nombre y apellido</label><br>
-                <input type="text" name="nombre y apellido"><br>
+                <label for="nombreyapellido" class="section__text form-label">Nombre y apellido</label><br>
+                <input type="text" name="nombre y apellido" class="form-control"><br>
                 <br>
-                <label for="email" class="section__text">Email</label><br>
-                <input type="text" name="Email"><br>
+                <label for="email" class="section__text form-label">Email</label><br>
+                <input type="text" name="Email" class="form-control"><br>
                 <br>
-                <label for="telefono" class="section__text">Teléfono</label><br>
-                <input type="text" name="telefono"><br>
+                <label for="telefono" class="section__text form-label">Teléfono</label><br>
+                <input type="text" name="telefono" class="form-control"><br>
                 <br>
-                <input type="text" name="Mensaje" placeholder="Indicanos por favor la fecha, cantidad de comensales y tipo de reunión. Nosotros te respondemos a la brevedad con una cotización."><br>
+                <textarea class="form-control" rows="5" type="text" name="Mensaje" placeholder="Indicanos por favor la fecha, cantidad de comensales y tipo de reunión. Nosotros te respondemos a la brevedad con una cotización."></textarea><br>
                 <br>
                 <input type="submit" value="Enviar" class="btn">
             </form>
         </div>
     </main>
 <!--  FOOTER  -->
-    <footer class="footer">
-        <article class="footer__sec">Navegación
-            <ul>
-                <li class="footer__link"><a href="../index.html" class="footer__item">INICIO</a></li>
-                <li class="footer__link"><a href="./productos.html" class="footer__item">PRODUCTOS</a></li>
-                <li class="footer__link"><a href="./cotizacion.html" class="footer__item">COTIZACIÓN</a></li>
-                <li class="footer__link"><a href="./lapasteleria.html" class="footer__item">LA PASTELERÍA</a></li>
-                <li class="footer__link"><a href="./contacto.html" class="footer__item">CONTACTO</a></li>
-            </ul>
-        </article>
-        <article class="footer__sec">Contactanos
-            <ul>
-                <li class="footer__item">+549 (264) 4567890</li>  
-                <li class="footer__item">+549 (264) 4324567</li>
-                <li class="footer__item">Mendoza 145 (n)</li> 
-            </ul>
-        </article>
-        <article class="footer__sec">Redes Sociales
-            <ul>
-                <li class="footer__link"><a href="https://www.instagram.com/" class="footer__item">Instagram</a></li>
-                <li class="footer__link"><a href="https://www.facebook.com/" class="footer__item">Facebook</a></li><br>
-                <p>Made by <span id="sign">a unicorn ❤</span></p>
-            </ul>
-        </article>
-    </footer>    
-
+    <footer class="footer container-fluid">
+        <div class="row pt-2">
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">Navegación</li>
+                    <li><a href="index.html" class="footer__item text-decoration-none">INICIO</a></li>
+                    <li><a href="./paginas/productos.html" class="footer__item text-decoration-none">PRODUCTOS</a></li>
+                    <li><a href="./paginas/cotizacion.html" class="footer__item text-decoration-none">COTIZACIÓN</a></li>
+                    <li><a href="./paginas/lapasteleria.html" class="footer__item text-decoration-none">LA PASTELERÍA</a></li>
+                    <li><a href="./paginas/contacto.html" class="footer__item text-decoration-none">CONTACTO</a></li>
+                </ul>
+            </article>
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">Contactanos</li>
+                    <li class="footer__item">+549 (264) 4567890</li>  
+                    <li class="footer__item">+549 (264) 4324567</li>
+                    <li class="footer__item">Mendoza 145 (n)</li> 
+                </ul>
+            </article>
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">Redes Sociales</li>
+                    <li><a href="https://www.instagram.com/" class="footer__item text-decoration-none">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" class="footer__item text-decoration-none">Facebook</a></li><br>
+                    
+                </ul>
+            </article>
+        </div>
+        <div class="container-fluid text-center">
+            <p class="small">Made by <span id="sign">a unicorn ❤</span></p>
+        </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
