@@ -11,45 +11,44 @@
 
 <body>
 <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <a href="index.html" title="Inicio"><img src="./media/logo.svg" alt="Logo" width="100%" height="100%" class="logo__image"></a>
-        </div>
-        <div>
-            <nav class="menu">
-                <ul class="menu__bar">
-                    <li class="mBtn"><a href="index.html" class="menu__link">INICIO</a></li>
-                    <li class="mBtn"><a href="paginas/productos.html" class="menu__link">PRODUCTOS</a></li>
-                    <li class="mBtn"><a href="paginas/cotizacion.html" class="menu__link">COTIZACIÓN</a></li>
-                    <li class="mBtn"><a href="paginas/lapasteleria.html" class="menu__link">LA PASTELERÍA</a></li>
-                    <li class="mBtn"><a href="paginas/contacto.html" class="menu__link">CONTACTO</a></li>
+    <header class="container-fluid d-flex justify-content-center">
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="index.html"><img src="./media/logo.svg" alt="Logo Cuppy Cakes" width="150px" height="150px" class="img-fluid"></a>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav">
+                    <li class="nav-item mBtn"><a class="nav-link" href="index.html">INICIO</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="./paginas/productos.html">PRODUCTOS</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="./paginas/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="./paginas/cotizacion.html">COTIZACIÓN</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="./paginas/contacto.html">CONTACTO</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 <!-- MAIN -->
     <main class="main1">
         <section class="section slide">
-            <h1 class="section__title">Pequeña descripción de la pastelería</h1>
-            <p class="section__text">Sed non sem auctor, lacinia massa et, vehicula tortor. Sed commodo lectus metus, nec ultrices risus aliquet vitae. Integer urna sapien, facilisis et accumsan sit amet, laoreet nec justo. Nunc porta tortor ex, sed lobortis eros fringilla sed. Nulla aliquam malesuada lectus quis sodales. Aliquam vitae auctor massa. </p>
+            <h1 class="section__title">Conocenos</h1>
+            <p class="section__text">La pastelería nos recibe con la sensación de estar en un lugar diferente. Con líneas puras, colores únicos y vibrantes, y texturas que a simple vista queremos entender para luego llevarnos con nosotros. La pastelería internacional que nos brinda Cuppy Cakes nos hace querer volver antes de irnos. </p>
         </section>
     </main>
 <!--  FOOTER  -->
     <footer class="footer container-fluid">
         <div class="row pt-2">
-            <article class="footer__sec col text-center">
+            <article class="footer__sec col text-center" id="invisible">
                 <ul class="list-unstyled">
-                    <li class="footer__item fw-bold">Navegación</li>
-                    <li><a href="index.html" class="footer__item text-decoration-none">INICIO</a></li>
-                    <li><a href="./paginas/productos.html" class="footer__item text-decoration-none">PRODUCTOS</a></li>
-                    <li><a href="./paginas/cotizacion.html" class="footer__item text-decoration-none">COTIZACIÓN</a></li>
-                    <li><a href="./paginas/lapasteleria.html" class="footer__item text-decoration-none">LA PASTELERÍA</a></li>
-                    <li><a href="./paginas/contacto.html" class="footer__item text-decoration-none">CONTACTO</a></li>
+                    <li class="footer__item fw-bold">NAVEGACIÓN</li>
+                    <li><a href="index.html" class="footer__item text-decoration-none">Inicio</a></li>
+                    <li><a href="./paginas/productos.html" class="footer__item text-decoration-none">Productos</a></li>
+                    <li><a href="./paginas/cotizacion.html" class="footer__item text-decoration-none">Cotización</a></li>
+                    <li><a href="./paginas/nosotros.html" class="footer__item text-decoration-none">Nosotros</a></li>
+                    <li><a href="./paginas/contacto.html" class="footer__item text-decoration-none">Contacto</a></li>
                 </ul>
             </article>
             <article class="footer__sec col text-center">
                 <ul class="list-unstyled">
-                    <li class="footer__item fw-bold">Contactanos</li>
+                    <li class="footer__item fw-bold">CONTACTANOS<li>
                     <li class="footer__item">+549 (264) 4567890</li>  
                     <li class="footer__item">+549 (264) 4324567</li>
                     <li class="footer__item">Mendoza 145 (n)</li> 
@@ -57,15 +56,15 @@
             </article>
             <article class="footer__sec col text-center">
                 <ul class="list-unstyled">
-                    <li class="footer__item fw-bold">Redes Sociales</li>
-                    <li><a href="https://www.instagram.com/" class="footer__item text-decoration-none">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/" class="footer__item text-decoration-none">Facebook</a></li><br>
+                    <li class="footer__item fw-bold">REDES SOCIALES</li>
+                    <li><a href="https://www.instagram.com/" class="footer__item text-decoration-none"><img src="./media/bxl-instagram 1.png" alt="Instagram" width="4%"> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" class="footer__item text-decoration-none"><img src="./media/bxl-facebook-circle 1.png" alt="Facebook" width="4%"> Facebook</a></li><br>
                     
                 </ul>
             </article>
         </div>
         <div class="container-fluid text-center">
-            <p class="small">Made by <span id="sign">a unicorn ❤</span></p>
+            <p class="small">Made by <span id="sign"><a href="https://github.com/aliss-p"> a unicorn ❤</a></span></p> 
         </div>
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
