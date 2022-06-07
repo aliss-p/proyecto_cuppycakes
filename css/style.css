@@ -20,7 +20,7 @@
     padding: 0;
 }
 body{
-    font-family: 'Montserrat';
+    font-family: var(--font);
     background-image: url(../media/back4.png);
     background-color: var(--background);
     background-repeat: no-repeat;

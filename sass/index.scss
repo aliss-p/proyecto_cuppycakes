@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap');
+@import 'misc/var.scss';
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $font;
+    background-image: url(../media/back4.png);
+    background-color: $background;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+// Style header
+.container-fluid{
+    .navbar{
+        .navbar-brand{
+            margin-right: 0%;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                background-color: $primary;
+                padding: $text-medium;
+                .mBtn{
+                    transition: all 0.4s linear;
+                    &:hover{
+                        background-color: $background-trans;
+                        color: $text-color;
+                    }
+                    .nav-link{
+                        color: $text-color;
+                        font-size: $text-large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Style Inicio
+.main1{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "section .";
+    margin-top: 5%;
+    margin-bottom: 5%;
+    .section{
+        font-size: $text-medium;
+        font-weight: 600;
+        background-color: $background-trans;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: "section";
+        &__title{
+            text-align: left;
+            font-size: $text-large;
+            font-weight: 600;
+        }
+        &__text{
+            font-size: $text-medium;
+            font-weight: 400;
+            text-align: justify;
+        }
+    }
+}
+// Style Footer
+footer{
+    background-color: $primary;
+    font-size: $text-small;
+    .footer__item{
+        color: $text-color;
+    }
+    #sign{
+    background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 191, 0), rgb(128, 255, 0), rgb(0, 255, 64), rgb(0, 255, 255), rgb(0, 64, 255), rgb(128, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
