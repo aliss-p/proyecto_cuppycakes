@@ -1,0 +1,102 @@
+// Style Contacto
+.main3{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 30px; 
+    grid-template-areas: 
+    ". .";
+    margin: 3%;
+    justify-items: stretch;
+    .column1{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 350px 150px;
+        gap: 30px 0px;
+        grid-template-areas: 
+        "."
+        ".";
+        .section{
+            font-size: map-get($font-size, text-medium);
+            font-weight: 600;
+            background-color: $background-trans;
+            padding: 2%;
+            @include flex-section(column, center, ".");
+            &__title{
+                @include title;
+            }
+            &__text{
+                @include text;
+            }
+            ul{
+                .text-decoration-none{
+                    color: $text-color;
+                }
+            }
+            form{
+                .btn{
+                    background-color: $background;
+                    font-family: $font;
+                    font-size: map-get($font-size, text-medium);
+                    font-weight: 600;
+                    color: $text-color;
+                    padding: 0.6rem;
+                    border-radius: 35px;
+                    border: 1px solid $text-color;
+                    transition:0.4s;
+                    &:hover{
+                        background-color: $primary;
+                        color: $background
+                    }
+                }
+            }
+        }
+    }
+    .column2{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 150px 350px;
+        gap: 30px 0px;
+        grid-template-areas: 
+        "."
+        ".";
+        .section{
+            font-size: map-get($font-size, text-medium);
+            font-weight: 600;
+            background-color: $background-trans;
+            padding: 2%;
+            @include flex-section(column, center, ".");
+            &__title{
+                @include title;
+            }
+            &__text{
+                @include text;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .main3{
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "."
+        ".";
+        .column1{
+            gap: 5px 0px;
+        }
+        .column2{
+            gap: 5px 0px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .main3{
+        .column2{
+            margin-bottom: 20px;
+        }
+    }
+}

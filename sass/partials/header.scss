@@ -1,0 +1,39 @@
+// Style header
+.container-fluid{
+    .navbar{
+        .navbar-toggler{
+            border: none;
+            padding: 0;
+            border-radius: 0;
+            .navbar-toggler-icon{
+                width: 2em;
+                height: 2em;
+            }
+        }
+        .navbar-brand{
+            margin-right: 0%;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                background-color: $primary;
+                padding: map-get($font-size, text-medium);
+                .mBtn{
+                    transition: all 0.4s linear;
+                    &:hover{
+                        background-color: $background-trans;
+                        color: $text-color;
+                    }
+                    .nav-link{
+                        color: $text-color;
+                        font-size: map-get($font-size, text-large);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    header{
+        font-size: map-get($font-size, text-medium);
+    }
+}

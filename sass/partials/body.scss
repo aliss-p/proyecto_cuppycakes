@@ -1,0 +1,14 @@
+body{
+    font-family: $font;
+    background-image: url(../media/back4.png);
+    background-color: $background;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 768px){
+    body{
+        background-image: url(../media/backsmol.png);
+        background-size: cover;
+    }
+}

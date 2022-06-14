@@ -1,0 +1,19 @@
+// Style Footer
+footer{
+    background-color: $primary;
+    font-size: map-get($font-size, text-small);
+    .footer__item{
+        color: $text-color;
+    }
+    #sign{
+    background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 191, 0), rgb(128, 255, 0), rgb(0, 255, 64), rgb(0, 255, 255), rgb(0, 64, 255), rgb(128, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+@media (max-width: 768px){
+    #invisible{
+        display: none;
+    }
+}

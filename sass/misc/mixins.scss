@@ -1,0 +1,16 @@
+@mixin flex-section($direction, $justify, $area) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    grid-area: $area;
+}
+@mixin title {
+    font-size: map-get($font-size, text-large);
+    text-align: left;
+    font-weight: 600;
+}
+@mixin text {
+    font-size: map-get($font-size, text-medium);
+    text-align: justify;
+    font-weight: 400;
+}

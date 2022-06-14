@@ -1,0 +1,41 @@
+// Style Cotizacion
+.main2{
+    .form{
+        grid-area: form;
+        font-size: map-get($font-size, text-medium);
+        font-weight: 600;
+        background-color: $background-trans;
+        padding: 1em;
+        justify-self: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        .section__title{
+            @include title;
+        }
+        .section__text{
+            @include text;
+        }
+    }
+    form{
+        .btn{
+            background-color: $background;
+            font-family: $font;
+            font-size: map-get($font-size, text-medium);
+            font-weight: 600;
+            color: $text-color;
+            padding: 0.6rem;
+            border-radius: 35px;
+            border: 1px solid $text-color;
+            transition:0.4s;
+            &:hover{
+                background-color: $primary;
+                color: $background;
+            }
+        }
+        .btn-borrar{
+            @extend .btn;
+            background-color: $primary;
+            color: $background;
+        }
+    }
+}
