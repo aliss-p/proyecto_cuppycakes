@@ -1,14 +1,18 @@
+/* Mixins */
+// .section
 @mixin flex-section($direction, $justify, $area) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     grid-area: $area;
 }
+// .section__title
 @mixin title {
     font-size: map-get($font-size, text-large);
     text-align: left;
     font-weight: 600;
 }
+// .section__text
 @mixin text {
     font-size: map-get($font-size, text-medium);
     text-align: justify;

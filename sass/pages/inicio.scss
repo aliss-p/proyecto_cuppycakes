@@ -1,4 +1,4 @@
-// Style Inicio
+/* Style Inicio */ 
 .main1{
     display: grid;
     grid-template-rows: 300px;
@@ -21,6 +21,7 @@
         }
     }
 }
+/* Responsive Inicio */ 
 @media (max-width: 768px){
     .main1{
         display: flex;

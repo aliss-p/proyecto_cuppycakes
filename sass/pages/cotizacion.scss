@@ -1,4 +1,4 @@
-// Style Cotizacion
+/* Style Cotizacion */
 .main2{
     .form{
         grid-area: form;
@@ -31,11 +31,6 @@
                 background-color: $primary;
                 color: $background;
             }
-        }
-        .btn-borrar{
-            @extend .btn;
-            background-color: $primary;
-            color: $background;
         }
     }
 }

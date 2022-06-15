@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0; }
 
-/* ANIMACIONES */
+/* Variables */
+/* Mixins */
+/* Animations */
 .slide {
   animation-name: slide;
   animation-duration: 1.5s;
@@ -15,6 +17,7 @@
   100% {
     transform: scale(1); } }
 
+/* Style Background */
 body {
   font-family: "Montserrat";
   background-image: url(../media/back4.png);
@@ -23,11 +26,13 @@ body {
   background-position: center;
   background-size: cover; }
 
+/* Responsive Background */
 @media (max-width: 768px) {
   body {
     background-image: url(../media/backsmol.png);
     background-size: cover; } }
 
+/* Style header */
 .container-fluid .navbar .navbar-toggler {
   border: none;
   padding: 0;
@@ -51,10 +56,12 @@ body {
       color: #090302;
       font-size: 1.2em; }
 
+/* Responsive Header */
 @media (max-width: 768px) {
   header {
     font-size: 1em; } }
 
+/* Style Footer */
 footer {
   background-color: #735D78;
   font-size: 0.8em; }
@@ -66,10 +73,12 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
+/* Responsive Footer */
 @media (max-width: 768px) {
   #invisible {
     display: none; } }
 
+/* Style Inicio */
 .main1 {
   display: grid;
   grid-template-rows: 300px;
@@ -95,6 +104,7 @@ footer {
       text-align: justify;
       font-weight: 400; }
 
+/* Responsive Inicio */
 @media (max-width: 768px) {
   .main1 {
     display: flex;
@@ -102,6 +112,7 @@ footer {
     justify-content: space-around;
     padding: 5%; } }
 
+/* Style Productos */
 .section {
   font-size: 1em;
   font-weight: 600;
@@ -120,10 +131,12 @@ footer {
     text-align: justify;
     font-weight: 400; }
 
+/* Responsive Productos*/
 @media (max-width: 768px) {
   .row {
     --bs-gutter-y:1.5rem; } }
 
+/* Style Cotizacion */
 .main2 .form {
   grid-area: form;
   font-size: 1em;
@@ -142,7 +155,7 @@ footer {
     text-align: justify;
     font-weight: 400; }
 
-.main2 form .btn, .main2 form .btn-borrar {
+.main2 form .btn {
   background-color: #DEDDCF;
   font-family: "Montserrat";
   font-size: 1em;
@@ -152,14 +165,11 @@ footer {
   border-radius: 35px;
   border: 1px solid #090302;
   transition: 0.4s; }
-  .main2 form .btn:hover, .main2 form .btn-borrar:hover {
+  .main2 form .btn:hover {
     background-color: #735D78;
     color: #DEDDCF; }
 
-.main2 form .btn-borrar {
-  background-color: #735D78;
-  color: #DEDDCF; }
-
+/* Style Nosotros */
 .main1 {
   display: grid;
   grid-template-rows: 300px;
@@ -185,6 +195,7 @@ footer {
       text-align: justify;
       font-weight: 400; }
 
+/* Responsive  Nosotros */
 @media (max-width: 768px) {
   .main1 {
     display: flex;
@@ -192,6 +203,7 @@ footer {
     justify-content: space-around;
     padding: 5%; } }
 
+/* Style Contacto */
 .main3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -225,7 +237,7 @@ footer {
         font-weight: 400; }
       .main3 .column1 .section ul .text-decoration-none {
         color: #090302; }
-      .main3 .column1 .section form .btn, .main3 .column1 .section .main2 form .btn-borrar, .main2 .main3 .column1 .section form .btn-borrar {
+      .main3 .column1 .section form .btn {
         background-color: #DEDDCF;
         font-family: "Montserrat";
         font-size: 1em;
@@ -235,7 +247,7 @@ footer {
         border-radius: 35px;
         border: 1px solid #090302;
         transition: 0.4s; }
-        .main3 .column1 .section form .btn:hover, .main3 .column1 .section .main2 form .btn-borrar:hover, .main2 .main3 .column1 .section form .btn-borrar:hover {
+        .main3 .column1 .section form .btn:hover {
           background-color: #735D78;
           color: #DEDDCF; }
   .main3 .column2 {
@@ -262,6 +274,7 @@ footer {
         text-align: justify;
         font-weight: 400; }
 
+/* Responsive Contacto */
 @media (max-width: 768px) {
   .main3 {
     display: grid;

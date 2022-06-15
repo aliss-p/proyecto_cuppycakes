@@ -1,3 +1,4 @@
+/* Style Background */
 body{
     font-family: $font;
     background-image: url(../media/back4.png);
@@ -6,6 +7,7 @@ body{
     background-position: center;
     background-size: cover;
 }
+/* Responsive Background */
 @media (max-width: 768px){
     body{
         background-image: url(../media/backsmol.png);

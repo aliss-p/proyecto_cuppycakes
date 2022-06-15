@@ -1,4 +1,4 @@
-// Style Footer
+/* Style Footer */ 
 footer{
     background-color: $primary;
     font-size: map-get($font-size, text-small);
@@ -12,6 +12,7 @@ footer{
     -webkit-text-fill-color: transparent;
     }
 }
+/* Responsive Footer */
 @media (max-width: 768px){
     #invisible{
         display: none;

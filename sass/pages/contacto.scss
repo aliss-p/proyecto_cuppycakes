@@ -1,4 +1,4 @@
-// Style Contacto
+/* Style Contacto */
 .main3{
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -75,6 +75,7 @@
         }
     }
 }
+/* Responsive Contacto */
 @media (max-width: 768px){
     .main3{
         display: grid;

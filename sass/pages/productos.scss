@@ -1,4 +1,4 @@
-// Style Productos
+/* Style Productos */
 .section{
     font-size: map-get($font-size, text-medium);
     font-weight: 600;
@@ -12,6 +12,7 @@
         @include text;
     }
 }
+/* Responsive Productos*/
 @media (max-width: 768px){
     .row{
         --bs-gutter-y:1.5rem;

@@ -1,4 +1,4 @@
-// Style Nosotros
+/* Style Nosotros */ 
 .main1{
     display: grid;
     grid-template-rows: 300px;
@@ -21,6 +21,7 @@
         }
     }
 }
+/* Responsive  Nosotros */
 @media (max-width: 768px){
     .main1{
         display: flex;

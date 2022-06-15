@@ -1,4 +1,4 @@
-// Style header
+/* Style header */ 
 .container-fluid{
     .navbar{
         .navbar-toggler{
@@ -32,6 +32,7 @@
         }
     }
 }
+/* Responsive Header */
 @media (max-width: 768px){
     header{
         font-size: map-get($font-size, text-medium);
