@@ -20,7 +20,7 @@
 /* Style Background */
 body {
   font-family: "Montserrat";
-  background-image: url(../media/back4.jpg);
+  background-image: url(../media/back4.webp);
   background-color: #DEDDCF;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,37 +29,45 @@ body {
 /* Responsive Background */
 @media (max-width: 768px) {
   body {
-    background-image: url(../media/backsmol.jpg);
+    background-image: url(../media/backsmol.webp);
     background-size: cover; } }
 
 /* Style header */
-.container-fluid .navbar .navbar-toggler {
-  border: none;
-  padding: 0;
-  border-radius: 0; }
-  .container-fluid .navbar .navbar-toggler .navbar-toggler-icon {
-    width: 2em;
-    height: 2em; }
-
-.container-fluid .navbar .navbar-brand {
-  margin-right: 0%; }
-
-.container-fluid .navbar .navbar-collapse .navbar-nav {
-  background-color: #735D78;
-  padding: 1em; }
-  .container-fluid .navbar .navbar-collapse .navbar-nav .mBtn {
-    transition: all 0.4s linear; }
-    .container-fluid .navbar .navbar-collapse .navbar-nav .mBtn:hover {
-      background-color: #deddcf80;
-      color: #090302; }
-    .container-fluid .navbar .navbar-collapse .navbar-nav .mBtn .nav-link {
-      color: #090302;
-      font-size: 1.2em; }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  header .navbar .navbar-brand {
+    margin-right: 0%; }
+  header .navbar .navbar-toggler {
+    border: none;
+    padding: 0;
+    border-radius: 0; }
+    header .navbar .navbar-toggler .navbar-toggler-icon {
+      width: 2em;
+      height: 2em; }
+  header .navbar .navbar-collapse .navbar-nav {
+    background-color: #735D78;
+    padding: 1em; }
+    header .navbar .navbar-collapse .navbar-nav .mBtn {
+      transition: all 0.4s linear; }
+      header .navbar .navbar-collapse .navbar-nav .mBtn:hover {
+        background-color: #deddcf80;
+        color: #090302; }
+      header .navbar .navbar-collapse .navbar-nav .mBtn .nav-link {
+        color: #090302;
+        font-size: 1.2em; }
 
 /* Responsive Header */
 @media (max-width: 768px) {
   header {
-    font-size: 1em; } }
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
+    header .navbar .navbar-brand img {
+      max-height: 150px;
+      width: auto; } }
 
 /* Style Footer */
 footer {

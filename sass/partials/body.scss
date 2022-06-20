@@ -1,7 +1,7 @@
 /* Style Background */
 body{
     font-family: $font;
-    background-image: url(../media/back4.jpg);
+    background-image: url(../media/back4.webp);
     background-color: $background;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,7 @@ body{
 /* Responsive Background */
 @media (max-width: 768px){
     body{
-        background-image: url(../media/backsmol.jpg);
+        background-image: url(../media/backsmol.webp);
         background-size: cover;
     }
 }
