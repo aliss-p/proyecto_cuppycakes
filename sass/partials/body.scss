@@ -6,6 +6,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 /* Responsive Background */
 @media (max-width: 768px){

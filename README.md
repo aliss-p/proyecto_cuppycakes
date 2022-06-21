@@ -1,5 +1,10 @@
 # proyecto_cuppycakes
 Proyecto final para Coder
+21/6/22
+Versión final
+
+Corregí algunos detalles del diseño y la disposición, solucionando un problema de ajuste al viewport que había; agrandé un poco la fuente del footer para hacerlo más legible; optimicé el formato de algunos de los logos a svg y agregué nuevos para mejorar la legibilidad de la información.
+
 14/6/22
 Tercera entrega del proyecto final
 

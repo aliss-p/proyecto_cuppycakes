@@ -4,12 +4,18 @@ footer{
     font-size: map-get($font-size, text-small);
     .footer__item{
         color: $text-color;
+        .footer__img{
+            height: 1.1em;
+        }
     }
-    #sign{
-    background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 191, 0), rgb(128, 255, 0), rgb(0, 255, 64), rgb(0, 255, 255), rgb(0, 64, 255), rgb(128, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .signature{
+        font-size: map-get($font-size, text-xs);
+        #sign{
+        background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 191, 0), rgb(128, 255, 0), rgb(0, 255, 64), rgb(0, 255, 255), rgb(0, 64, 255), rgb(128, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
     }
 }
 /* Responsive Footer */

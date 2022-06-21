@@ -31,6 +31,9 @@
             ul{
                 .text-decoration-none{
                     color: $text-color;
+                    .section__img{
+                        height: 1.2em;
+                    }
                 }
             }
             form{
@@ -87,17 +90,10 @@
         ".";
         .column1{
             gap: 5px 0px;
+            margin-bottom: 5px;
         }
         .column2{
             gap: 5px 0px;
-            margin-bottom: 10px;
-        }
-    }
-}
-@media (max-width: 576px){
-    .main3{
-        .column2{
-            margin-bottom: 20px;
         }
     }
 }
